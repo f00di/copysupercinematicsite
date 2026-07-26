@@ -1,0 +1,28 @@
+# dependencies
+/node_modules
+
+# next
+/.next/
+/out/
+
+# test output
+/playwright-report/
+/test-results/
+/coverage/
+
+# reference-only captures
+/.reference-cache/
+
+# local screenshots and generated comparison artifacts
+/artifacts/
+
+# environment and deployment state
+.env
+.env.*
+!.env.example
+.vercel
+
+# system
+.DS_Store
+*.log
+*.tsbuildinfo
