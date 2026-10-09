@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { useLayoutEffect, useRef } from "react";
 import { residencePanels } from "@/content/residence-panels";
 import { motion } from "@/lib/animation";
@@ -107,7 +108,7 @@ export function ResidenceStory() {
           {residencePanels.map((panel, index) => (
             <div className="story-media" data-story-media key={panel.image}>
               <Image
-                src={panel.image}
+                src={asset(panel.image)}
                 alt=""
                 fill
                 priority={index === 0}
@@ -141,7 +142,7 @@ export function ResidenceStory() {
           <article className="mobile-panel" key={panel.number}>
             <div className="mobile-panel-media">
               <Image
-                src={panel.image}
+                src={asset(panel.image)}
                 alt={panel.alt}
                 fill
                 priority={index === 0}

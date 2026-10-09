@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Instrument_Serif, Manrope } from "next/font/google";
 import { site } from "@/content/site";
+import { asset } from "@/lib/asset";
 import "./globals.css";
 
 const display = Instrument_Serif({
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     images: ["/media/residence-01.webp"],
   },
   icons: {
-    icon: "/icons/favicon.svg",
+    icon: asset("/icons/favicon.svg"),
   },
 };
 
